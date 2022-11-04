@@ -1,7 +1,13 @@
 .cache
 build
-exports
 node_modules
 public/uploads/*
 !public/uploads/.gitkeep
 .tmp
+.editorconfig
+.env
+.env.example
+.git
+.gitignore
+README.md
+.DS_Store

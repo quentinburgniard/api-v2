@@ -1,7 +1,7 @@
 {
   "name": "api-v2",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -9,12 +9,14 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "better-sqlite3": "7.x"
+  },
   "dependencies": {
     "@strapi/strapi": "4.x",
     "@strapi/plugin-users-permissions": "4.x",
     "@strapi/plugin-i18n": "4.x",
-    "better-sqlite3": "7.4.6"
+    "mysql": "2.x"
   },
   "author": {
     "name": "A Strapi developer"

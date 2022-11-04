@@ -1,8 +1,13 @@
-module.exports = ({ env }) => ({
-  auth: {
-    secret: env('ADMIN_JWT_SECRET'),
-  },
+const crypto = require('crypto');
+
+module.exports = {
   apiToken: {
-    salt: env('API_TOKEN_SALT'),
+    salt: crypto.randomBytes(32).toString('hex'),
   },
-});
+  auth: {
+    options: {
+      expiresIn: '7d'
+    },
+    secret: crypto.randomBytes(32).toString('hex'),
+  }
+};

@@ -7,5 +7,5 @@ COPY package.json .
 COPY package-lock.json .
 RUN npm install
 COPY . .
-RUN npm run build
+RUN npm run build && rm -r src
 CMD pm2-runtime server.js
