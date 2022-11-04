@@ -12,10 +12,17 @@ export default {
     menu: {
       logo: logo
     },
-    tutorials: false,
     notifications: {
       release: false
-    }
+    },
+    translations: {
+      en: {
+        'app.components.LeftMenu.navbrand.title': 'Digital Léman Admin',
+        'Auth.form.welcome.subtitle': 'Log in to your Digital Léman account',
+        'Auth.form.welcome.title': 'Welcome to Digital Léman Admin!'
+      }
+    },
+    tutorials: false
   },  
   bootstrap() {},
 };
