@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paragraphs",
+  "info": {
+    "singularName": "paragraph",
+    "pluralName": "paragraphs",
+    "displayName": "Paragraph"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "letters": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::letter.letter",
+      "inversedBy": "paragraphs"
+    }
+  }
+}

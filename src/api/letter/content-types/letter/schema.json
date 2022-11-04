@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "letters",
+  "info": {
+    "singularName": "letter",
+    "pluralName": "letters",
+    "displayName": "Letter"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paragraphs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::paragraph.paragraph",
+      "inversedBy": "letters"
+    }
+  }
+}
