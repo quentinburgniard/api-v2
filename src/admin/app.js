@@ -1,5 +1,5 @@
-import favicon from './extensions/favivon.ico';
-import logo from './extensions/logo.png';
+import favicon from '../../favivon.ico';
+import logo from '.../../logo.png';
 
 export default {
   config: {
