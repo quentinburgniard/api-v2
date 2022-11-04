@@ -1,14 +1,14 @@
-import favicon from '../../favivon.ico';
-import logo from '.../../logo.png';
+//import favicon from './extensions/favivon.ico';
+import logo from './extensions/logo.png';
 
 export default {
   config: {
     auth: {
       logo: logo
     },
-    head: {
-      favicon: favicon
-    },
+    //head: {
+      //favicon: favicon
+    //},
     menu: {
       logo: logo
     },
