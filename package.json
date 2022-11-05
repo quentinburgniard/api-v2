@@ -1,32 +1,34 @@
 {
-  "name": "api-v2",
-  "private": true,
-  "version": "1.0.0",
-  "description": "A Strapi application",
-  "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
-  },
-  "devDependencies": {
-    "better-sqlite3": "7.x"
+  "author": {
+    "name": "Digital Léman"
   },
   "dependencies": {
-    "@strapi/strapi": "4.x",
-    "@strapi/plugin-users-permissions": "4.x",
+    "@strapi/provider-email-sendgrid": "4.x",
     "@strapi/plugin-i18n": "4.x",
+    "@strapi/plugin-users-permissions": "4.x",
+    "@strapi/provider-upload-aws-s3": "4.x",
+    "@strapi/strapi": "4.x",
     "mysql": "2.x"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "573cd512-c246-458c-a548-69ff0fb4f232"
+  "description": "Headless CMS using Strapi 4",
+  "devDependencies": {
+    "better-sqlite3": "7.x"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "name": "api-v2",
+  "private": true,
+  "scripts": {
+    "build": "strapi build",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "strapi": {
+    "uuid": "573cd512-c246-458c-a548-69ff0fb4f232"
+  },
+  "version": "1.0.0"
 }
