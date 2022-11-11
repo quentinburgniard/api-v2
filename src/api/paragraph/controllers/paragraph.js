@@ -8,15 +8,16 @@ const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::paragraph.paragraph', ({ strapi }) => ({
   async create(ctx) {
-    console.log(ctx);
-    const response = await super.create(ctx);
-    return response;
+    if (ctx.state.user) {
+      ctx.request.body.data.user = ctx.state.user.id;
+      const response = await super.create(ctx);
+      return response;
+    }
   },
   async find(ctx) {
     if (ctx.state.user) {
       let filters = ctx.query.filters || {};
       filters.user = ctx.state.user.id;
-      //filters.user = ctx.state.user.id;
       ctx.query.filters = filters;
       const { data, meta } = await super.find(ctx);
       return { data, meta };
