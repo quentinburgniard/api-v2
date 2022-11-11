@@ -23,7 +23,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::letter.letter",
-      "inversedBy": "paragraphs"
+      "mappedBy": "paragraphs"
     }
   }
 }
