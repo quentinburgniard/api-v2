@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "functions",
+  "info": {
+    "singularName": "function",
+    "pluralName": "functions",
+    "displayName": "Function",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "parameters": {
+      "type": "json",
+      "required": true
+    },
+    "service": {
+      "type": "enumeration",
+      "enum": [
+        "screenshot"
+      ],
+      "required": true
+    },
+    "completedAt": {
+      "type": "datetime"
+    },
+    "results": {
+      "type": "json"
+    }
+  }
+}

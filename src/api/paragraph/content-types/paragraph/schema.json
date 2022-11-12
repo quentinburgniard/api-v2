@@ -4,7 +4,8 @@
   "info": {
     "singularName": "paragraph",
     "pluralName": "paragraphs",
-    "displayName": "Paragraph"
+    "displayName": "Paragraph",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -12,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "text": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "user": {
       "type": "relation",
