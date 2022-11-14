@@ -1,10 +1,10 @@
 'use strict';
 
 const { createCoreService } = require('@strapi/strapi').factories;
-const puppeteer = require('puppeteer');
+//const puppeteer = require('puppeteer');
 
 module.exports = createCoreService('api::function.function', ({ strapi }) => ({
-  async screenshot(params) {
+  /*async screenshot(params) {
     await puppeteer.launch({
       defaultViewport: {
         height: params.height || 1080,
@@ -20,6 +20,6 @@ module.exports = createCoreService('api::function.function', ({ strapi }) => ({
       await browser.close();
     });
   
-    //return response;
-  }
+    return response;
+  }*/
 }));
