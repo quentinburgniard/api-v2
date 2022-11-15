@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presentations",
+  "info": {
+    "singularName": "presentation",
+    "pluralName": "presentations",
+    "displayName": "Presentation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slides": {
+      "displayName": "Slides",
+      "type": "component",
+      "repeatable": true,
+      "component": "presentation.slide"
+    }
+  }
+}
