@@ -8,8 +8,8 @@ module.exports = ({ env }) => ({
         apiKey: env('SENDGRID_TOKEN')
       },
       settings: {
-        defaultFrom: 'bot@digitalleman.com',
-        defaultReplyTo: 'hello@digitalleman.com'
+        defaultFrom: 'admin@digitalleman.com',
+        defaultReplyTo: 'contact@quentinburgniard.com'
       }
     }
   },
