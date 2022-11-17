@@ -1,8 +1,16 @@
 {
   "collectionName": "slides",
   "info": {
-    "displayName": "Slide"
+    "displayName": "Slide",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
 }

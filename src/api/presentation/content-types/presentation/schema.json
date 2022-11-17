@@ -4,7 +4,8 @@
   "info": {
     "singularName": "presentation",
     "pluralName": "presentations",
-    "displayName": "Presentation"
+    "displayName": "Presentation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -16,6 +17,18 @@
       "type": "component",
       "repeatable": true,
       "component": "presentation.slide"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "subtitle": {
+      "type": "string"
     }
   }
 }
