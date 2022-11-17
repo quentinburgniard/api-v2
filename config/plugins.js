@@ -18,12 +18,20 @@ module.exports = ({ env }) => ({
       provider: 'aws-s3',
       providerOptions: {
         accessKeyId: env('DIGITALOCEAN_USER'),
-        endpoint: 'https://fra1.digitaloceanspaces.com',
+        endpoint: 'fra1.digitaloceanspaces.com/api',
         params: {
           Bucket: 'digitalleman'
         },
         region: 'fra1',
         secretAccessKey: env('DIGITALOCEAN_PASSWORD')
+      },
+      actionOptions: {
+        upload: {
+          ACL: 'private'
+        },
+        uploadStream: {
+          ACL: 'private'
+        }
       }
     }
   },
