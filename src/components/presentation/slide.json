@@ -6,11 +6,16 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "text": {
       "type": "richtext"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
