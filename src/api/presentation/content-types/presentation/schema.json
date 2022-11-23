@@ -16,7 +16,7 @@
       "displayName": "Slides",
       "type": "component",
       "repeatable": true,
-      "component": "presentation.slide"
+      "component": "content.slide"
     },
     "title": {
       "type": "string",

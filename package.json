@@ -6,9 +6,9 @@
     "@strapi/plugin-i18n": "4.x",
     "@strapi/plugin-users-permissions": "4.x",
     "@strapi/provider-email-sendgrid": "4.x",
-    "@strapi/provider-upload-aws-s3": "4.x",
     "@strapi/strapi": "4.x",
-    "mysql": "2.x"
+    "mysql": "2.x",
+    "strapi-provider-upload-aws-s3": "file:providers/strapi-provider-upload-aws-s3"
   },
   "description": "Headless CMS using Strapi 4",
   "devDependencies": {
