@@ -38,7 +38,7 @@ module.exports = {
               return reject(err);
             }
 
-            console.log(data);
+            console.log(file);
             // set the bucket file url
             if (assertUrlProtocol(data.Location)) {
               file.url = data.Location;
