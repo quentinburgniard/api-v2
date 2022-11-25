@@ -8,15 +8,6 @@
   "attributes": {
     "text": {
       "type": "richtext"
-    },
-    "media": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "videos"
-      ]
     }
   }
 }
