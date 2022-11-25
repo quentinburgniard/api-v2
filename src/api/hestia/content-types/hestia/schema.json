@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "hestias",
+  "info": {
+    "singularName": "hestia",
+    "pluralName": "hestias",
+    "displayName": "Hestia",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.page"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "contact": {
+      "type": "richtext"
+    }
+  }
+}

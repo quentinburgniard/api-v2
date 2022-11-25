@@ -1,15 +1,15 @@
 {
-  "collectionName": "questions",
+  "collectionName": "pages",
   "info": {
-    "displayName": "Question"
+    "displayName": "Page"
   },
   "options": {},
   "attributes": {
-    "question": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "answer": {
+    "text": {
       "type": "richtext",
       "required": true
     }

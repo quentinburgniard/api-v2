@@ -15,7 +15,7 @@ module.exports = ({ env }) => ({
   },
   'upload': {
     config: {
-      provider: 'strapi-provider-upload-aws-s3',
+      provider: 'aws-s3',
       providerOptions: {
         accessKeyId: env('DIGITALOCEAN_USER'),
         endpoint: 'fra1.digitaloceanspaces.com/private',

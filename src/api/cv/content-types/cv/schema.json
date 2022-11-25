@@ -52,7 +52,7 @@
       "type": "date",
       "required": true
     },
-    "photo": {
+    "picture": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -88,6 +88,51 @@
         }
       },
       "type": "text"
+    },
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "footer": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "color": {
+      "type": "colorpicker",
+      "columnType": "string"
+    },
+    "experiences": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.event"
+    },
+    "educations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.event"
+    },
+    "miscellaneous": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.event"
+    },
+    "skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.page"
+    },
+    "interests": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.page"
     }
   }
 }

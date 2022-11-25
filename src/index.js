@@ -1,20 +1,15 @@
 'use strict';
 
 module.exports = {
-  /**
-   * An asynchronous register function that runs before
-   * your application is initialized.
-   *
-   * This gives you an opportunity to extend code.
-   */
-  register(/*{ strapi }*/) {},
-
+  bootstrap({ strapi }) {
+  },
   register({ strapi }) {
     strapi.contentType('plugin::upload.file').attributes.user = {
-      type: 'relation',
-      relation: 'oneToOne',
-      target: 'plugin::users-permissions.user'
+      user: {
+        relation: 'oneToOne',
+        target: 'plugin::users-permissions.user',
+        type: 'relation'
+      }
     }
-  },
-  bootstrap({ strapi }) {},
+  }
 };
