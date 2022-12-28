@@ -2,7 +2,7 @@ const crypto = require('crypto');
 
 module.exports = {
   apiToken: {
-    salt: crypto.randomBytes(32).toString('hex'),
+    salt: env('SALT'),
   },
   auth: {
     options: {
