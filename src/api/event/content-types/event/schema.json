@@ -26,6 +26,9 @@
     "endDate": {
       "type": "datetime",
       "required": true
+    },
+    "version": {
+      "type": "integer"
     }
   }
 }
