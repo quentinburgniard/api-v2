@@ -37,7 +37,7 @@ module.exports = ({ env }) => ({
   },
   'users-permissions': {
     config: {
-      jwtSecret: crypto.randomBytes(32).toString('hex')
+      jwtSecret: env('SECRET')
     }
   }
 });
