@@ -12,7 +12,7 @@ module.exports = createCoreController('api::event.event', ({ strapi }) => ({
   },
   async find(ctx) {
     console.log(ctx.state);
-    if (ctx.state.user) {
+    if (ctx.state.user || ctx.state.auth.strategy.name == 'api-token') {
       let filters = ctx.query.filters || {};
       filters.user = ctx.state.user.id;
       ctx.query.filters = filters;
