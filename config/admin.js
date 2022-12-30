@@ -8,6 +8,6 @@ module.exports = {
     options: {
       expiresIn: '7d'
     },
-    secret: crypto.randomBytes(32).toString('hex'),
+    secret: env('SECRET')
   }
 };
