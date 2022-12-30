@@ -1,6 +1,4 @@
-const crypto = require('crypto');
-
-module.exports = {
+module.exports = ({ env }) => ({
   apiToken: {
     salt: env('SALT'),
   },
@@ -10,4 +8,4 @@ module.exports = {
     },
     secret: env('SECRET')
   }
-};
+});
