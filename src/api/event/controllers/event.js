@@ -11,11 +11,13 @@ module.exports = createCoreController('api::event.event', ({ strapi }) => ({
     }
   },
   async find(ctx) {
-    console.log(ctx.state);
-    if (ctx.state.user || ctx.state.auth.strategy.name == 'api-token') {
+    if (ctx.state.user) {
       let filters = ctx.query.filters || {};
       filters.user = ctx.state.user.id;
       ctx.query.filters = filters;
+      const { data, meta } = await super.find(ctx);
+      return { data, meta };
+    } else if (ctx.state.auth.strategy.name == 'api-token') {
       const { data, meta } = await super.find(ctx);
       return { data, meta };
     }
