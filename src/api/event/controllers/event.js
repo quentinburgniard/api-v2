@@ -11,6 +11,7 @@ module.exports = createCoreController('api::event.event', ({ strapi }) => ({
     }
   },
   async find(ctx) {
+    console.log(ctx.state.user);
     if (ctx.state.user) {
       let filters = ctx.query.filters || {};
       filters.user = ctx.state.user.id;
