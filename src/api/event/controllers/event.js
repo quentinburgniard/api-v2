@@ -9,14 +9,5 @@ module.exports = createCoreController('api::event.event', ({ strapi }) => ({
       const response = await super.create(ctx);
       return response;
     }
-  },
-  async find(ctx) {
-    if (ctx.state.user) {
-      let filters = ctx.query.filters || {};
-      filters.user = ctx.state.user.id;
-      ctx.query.filters = filters;
-      const { data, meta } = await super.find(ctx);
-      return { data, meta };
-    }
   }
 }));
