@@ -127,12 +127,12 @@
     "skills": {
       "type": "component",
       "repeatable": true,
-      "component": "content.page"
+      "component": "content.section"
     },
     "interests": {
       "type": "component",
       "repeatable": true,
-      "component": "content.page"
+      "component": "content.section"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
-  "collectionName": "pages",
+  "collectionName": "sections",
   "info": {
-    "displayName": "Page"
+    "displayName": "Section"
   },
   "options": {},
   "attributes": {

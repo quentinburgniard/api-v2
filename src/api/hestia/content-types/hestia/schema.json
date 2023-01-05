@@ -23,7 +23,7 @@
     "questions": {
       "type": "component",
       "repeatable": true,
-      "component": "content.page"
+      "component": "content.section"
     },
     "phoneNumber": {
       "type": "string"
