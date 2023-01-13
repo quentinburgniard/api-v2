@@ -28,6 +28,9 @@
       ],
       "required": true
     },
+    "socket": {
+      "type": "string"
+    },
     "completedAt": {
       "type": "datetime"
     },
