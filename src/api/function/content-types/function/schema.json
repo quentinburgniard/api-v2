@@ -24,6 +24,7 @@
     "service": {
       "type": "enumeration",
       "enum": [
+        "pdf",
         "screenshot"
       ],
       "required": true
