@@ -22,8 +22,7 @@
           "localized": false
         }
       },
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "lastName": {
       "pluginOptions": {
@@ -31,8 +30,7 @@
           "localized": false
         }
       },
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "email": {
       "pluginOptions": {
@@ -49,13 +47,11 @@
           "localized": false
         }
       },
-      "type": "date",
-      "required": true
+      "type": "date"
     },
     "picture": {
       "type": "media",
       "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images"
       ],
