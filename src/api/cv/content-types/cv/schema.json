@@ -77,7 +77,7 @@
       },
       "type": "string"
     },
-    "adress": {
+    "address": {
       "pluginOptions": {
         "i18n": {
           "localized": true
