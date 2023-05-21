@@ -59,6 +59,16 @@
     },
     "profile": {
       "type": "string"
+    },
+    "presentation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.section"
+    },
+    "approach": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.section"
     }
   }
 }
