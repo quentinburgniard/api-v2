@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "hestias",
+  "collectionName": "valeries",
   "info": {
-    "singularName": "hestia",
-    "pluralName": "hestias",
-    "displayName": "Hestia",
-    "description": ""
+    "singularName": "valerie",
+    "pluralName": "valeries",
+    "displayName": "Valérie"
   },
   "options": {
     "draftAndPublish": false
@@ -17,8 +16,15 @@
       "required": true
     },
     "subtitle": {
-      "type": "text",
+      "type": "richtext",
       "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "questions": {
       "type": "component",
