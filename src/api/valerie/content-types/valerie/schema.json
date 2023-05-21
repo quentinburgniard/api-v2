@@ -20,13 +20,6 @@
       "type": "richtext",
       "required": true
     },
-    "logo": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "questions": {
       "type": "component",
       "repeatable": true,
@@ -61,12 +54,11 @@
       "repeatable": false,
       "component": "content.section"
     },
+    "logo": {
+      "type": "string"
+    },
     "profile": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+      "type": "string"
     }
   }
 }
