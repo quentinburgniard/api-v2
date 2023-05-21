@@ -101,10 +101,6 @@
       },
       "type": "richtext"
     },
-    "color": {
-      "type": "colorpicker",
-      "columnType": "string"
-    },
     "experiences": {
       "type": "component",
       "repeatable": true,

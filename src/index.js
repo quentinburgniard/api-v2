@@ -4,7 +4,9 @@ module.exports = {
   bootstrap({ strapi }) {
   },
   register({ strapi }) {
-    strapi.contentType('plugin::upload.file').attributes.user = {
+    const contentType = strapi.contentType('plugin::upload.file');
+    contentType.attributes = {
+      ...contentType.attributes,
       user: {
         relation: 'oneToOne',
         target: 'plugin::users-permissions.user',
