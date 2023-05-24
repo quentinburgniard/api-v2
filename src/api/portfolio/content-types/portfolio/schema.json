@@ -1,39 +1,48 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "portfolios",
   "info": {
     "singularName": "portfolio",
     "pluralName": "portfolios",
-    "displayName": "Portfolio"
+    "displayName": "Portfolio",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "reference": {
-      "type": "string",
-      "required": true
-    },
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
-    "picture": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "shortDescription": {
+    "description": {
       "type": "richtext"
     },
-    "personalDescription": {
+    "technicalDescription": {
       "type": "richtext"
     },
-    "professionalDescription": {
-      "type": "richtext"
+    "searchEngineDescription": {
+      "type": "text"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+    "technologies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "image": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::image.image"
     }
   }
 }
