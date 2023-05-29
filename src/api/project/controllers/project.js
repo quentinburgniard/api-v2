@@ -4,25 +4,9 @@ const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::project.project', ({ strapi }) =>  ({
   async findOneBySlug(ctx) {
-    let data = await strapi.db.query('api::project.project').findOne({
-      //select: ['title', 'description'],
-      where: {
-        locale: ctx.params.locale,
-        //publishedAt: { $notNull: true },
-        slug: ctx.params.slug
-      }
-      //populate: true,
-    });
-    if (data) {
-      let id = data.id;
-      delete data.id;
-      return {
-        data: {
-          id: id,
-          attributes: data
-        },
-        meta: {}
-      }
-    }
+    const sanitizedQueryParams = await this.sanitizeQuery(ctx);
+    const results = await strapi.service('api::project.project').findOneBySlug(ctx.params.locale, ctx.params.slug, sanitizedQueryParams);
+    const sanitizedResults = await this.sanitizeOutput(results, ctx);
+    return this.transformResponse(sanitizedResults);
   }
 }));
