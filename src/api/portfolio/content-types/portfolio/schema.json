@@ -40,7 +40,7 @@
         }
       }
     },
-    "categories": {
+    "tags": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag.tag"
@@ -49,11 +49,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::project.project"
-    },
-    "technologies": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tag.tag"
     },
     "image": {
       "type": "relation",
