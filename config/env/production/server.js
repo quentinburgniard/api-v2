@@ -11,5 +11,6 @@ module.exports = {
   },
   host: '0.0.0.0',
   port: 80,
-  proxy: true
+  proxy: true,
+  url: 'https://api.digitalleman.com'
 };
