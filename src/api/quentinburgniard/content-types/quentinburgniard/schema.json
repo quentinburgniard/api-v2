@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "quentinburgniards",
+  "info": {
+    "singularName": "quentinburgniard",
+    "pluralName": "quentinburgniards",
+    "displayName": "Quentin Burgniard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "searchEngineDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+    "image": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::image.image"
+    },
+    "summary": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    }
+  }
+}
