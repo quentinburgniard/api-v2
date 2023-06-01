@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "quentinburgniards",
+  "collectionName": "advanceds",
   "info": {
-    "singularName": "quentinburgniard",
-    "pluralName": "quentinburgniards",
-    "displayName": "Quentin Burgniard",
+    "singularName": "advanced",
+    "pluralName": "advanceds",
+    "displayName": "Advanced",
     "description": ""
   },
   "options": {

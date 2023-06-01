@@ -6,4 +6,4 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::quentinburgniard.quentinburgniard');
+module.exports = createCoreRouter('api::advanced.advanced');

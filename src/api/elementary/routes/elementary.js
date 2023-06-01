@@ -6,4 +6,4 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::digitalleman.digitalleman');
+module.exports = createCoreRouter('api::elementary.elementary');

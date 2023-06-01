@@ -6,4 +6,4 @@
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::quentinburgniard.quentinburgniard');
+module.exports = createCoreService('api::elementary.elementary');

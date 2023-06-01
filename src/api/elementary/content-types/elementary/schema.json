@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "digitallemans",
+  "collectionName": "elementarys",
   "info": {
-    "singularName": "digitalleman",
-    "pluralName": "digitallemans",
-    "displayName": "Digital Léman",
+    "singularName": "elementary",
+    "pluralName": "elementarys",
+    "displayName": "Elementary",
     "description": ""
   },
   "options": {

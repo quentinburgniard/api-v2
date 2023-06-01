@@ -6,4 +6,4 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::quentinburgniard.quentinburgniard');
+module.exports = createCoreController('api::advanced.advanced');

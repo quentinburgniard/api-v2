@@ -6,4 +6,4 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::digitalleman.digitalleman');
+module.exports = createCoreController('api::elementary.elementary');
