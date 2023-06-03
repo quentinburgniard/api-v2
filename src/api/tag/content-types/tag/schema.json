@@ -35,7 +35,7 @@
     "image": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::image.image"
+      "target": "api::asset.asset"
     },
     "projects": {
       "type": "relation",

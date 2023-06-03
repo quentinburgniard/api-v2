@@ -90,7 +90,7 @@
     "images": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::image.image"
+      "target": "api::asset.asset"
     },
     "relatedProjects": {
       "type": "relation",

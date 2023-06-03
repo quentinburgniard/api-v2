@@ -49,17 +49,10 @@
       },
       "type": "date"
     },
-    "picture": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+    "image": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::asset.asset"
     },
     "website": {
       "pluginOptions": {
