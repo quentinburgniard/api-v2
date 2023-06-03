@@ -2,12 +2,6 @@ module.exports = [
   'strapi::errors',
   'strapi::security',
   'strapi::cors',
-  {
-    name: 'strapi::poweredBy',
-    config: {
-      poweredBy: 'Digital Leman <digitalleman.com>'
-    }
-  },
   'strapi::logger',
   'strapi::query',
   'strapi::body',
@@ -18,5 +12,6 @@ module.exports = [
     config: {
       defaultIndex: false
     }
-  }
+  },
+  'global::token'
 ];

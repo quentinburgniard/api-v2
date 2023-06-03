@@ -3,10 +3,9 @@
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::project.project', ({ strapi }) =>  ({
-  async findOneBySlug(ctx) {
-    const sanitizedQueryParams = await this.sanitizeQuery(ctx);
-    const results = await strapi.service('api::project.project').findOneBySlug(ctx.params.locale, ctx.params.slug, sanitizedQueryParams);
-    const sanitizedResults = await this.sanitizeOutput(results, ctx);
+  async findOneBySlug(context) {
+    const results = await strapi.service('api::project.project').findOneBySlug(context.params.locale, context.params.slug);
+    const sanitizedResults = await this.sanitizeOutput(results, context);
     return this.transformResponse(sanitizedResults);
   }
 }));

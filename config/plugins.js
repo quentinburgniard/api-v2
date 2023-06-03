@@ -13,7 +13,7 @@ module.exports = ({ env }) => ({
       }
     }
   },
-  'upload': {
+  /*'upload': {
     config: {
       provider: 'aws-s3',
       providerOptions: {
@@ -34,7 +34,7 @@ module.exports = ({ env }) => ({
         }
       }
     }
-  },
+  },*/
   'users-permissions': {
     config: {
       jwt: {
