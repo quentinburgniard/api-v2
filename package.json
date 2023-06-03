@@ -14,10 +14,6 @@
   "devDependencies": {
     "better-sqlite3": "7.x"
   },
-  "engines": {
-    "node": ">=12.x.x <=16.x.x",
-    "npm": ">=6.0.0"
-  },
   "license": "MIT",
   "name": "api-v2",
   "private": true,
