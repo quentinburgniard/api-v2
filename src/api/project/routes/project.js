@@ -9,5 +9,6 @@ module.exports = createCoreRouter('api::project.project', {
         'global::published'
       ]
     }
-  }
+  },
+  only: ['find']
 });
