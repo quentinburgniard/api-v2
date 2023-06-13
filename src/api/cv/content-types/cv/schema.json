@@ -118,6 +118,17 @@
       "type": "component",
       "repeatable": true,
       "component": "content.section"
+    },
+    "template": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "cv-pivot-picture"
+      ]
     }
   }
 }
