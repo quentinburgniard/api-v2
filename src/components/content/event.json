@@ -11,14 +11,15 @@
       "required": true
     },
     "description": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
     "startDate": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "endDate": {
-      "type": "date"
+      "type": "date",
+      "required": true
     }
   }
 }
