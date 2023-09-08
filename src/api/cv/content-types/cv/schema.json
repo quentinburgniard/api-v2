@@ -127,7 +127,7 @@
       },
       "type": "enumeration",
       "enum": [
-        "cv-pivot-picture"
+        "pivot-picture"
       ]
     }
   }
