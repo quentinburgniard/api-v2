@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routines",
+  "info": {
+    "singularName": "routine",
+    "pluralName": "routines",
+    "displayName": "Routine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "steps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::routine-step.routine-step",
+      "mappedBy": "routine"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routine_step_executions",
+  "info": {
+    "singularName": "routine-step-execution",
+    "pluralName": "routine-step-executions",
+    "displayName": "Routine Step Execution",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "step": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::routine-step.routine-step"
+    },
+    "execution": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::routine-execution.routine-execution",
+      "inversedBy": "stepExecutions"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}
