@@ -38,6 +38,24 @@
         }
       },
       "type": "richtext"
+    },
+    "inputType": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "checkbox",
+        "date",
+        "email",
+        "month",
+        "number",
+        "tel",
+        "text",
+        "url"
+      ]
     }
   }
 }
