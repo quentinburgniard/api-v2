@@ -62,7 +62,8 @@
       "enum": [
         "daily",
         "monthly",
-        "weekly"
+        "weekly",
+        "yearly"
       ]
     },
     "executions": {
@@ -72,6 +73,14 @@
       "mappedBy": "routine"
     },
     "reminderHour": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
+    },
+    "reminderMonth": {
       "pluginOptions": {
         "i18n": {
           "localized": false
