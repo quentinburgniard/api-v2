@@ -35,6 +35,43 @@
       "relation": "oneToMany",
       "target": "api::routine-step.routine-step",
       "mappedBy": "routine"
+    },
+    "reminderDay": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
+    },
+    "reminderWeekday": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
+    },
+    "reminderHour": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer"
+    },
+    "reminderFrequency": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "daily",
+        "monthly",
+        "weekly"
+      ]
     }
   }
 }

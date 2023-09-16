@@ -47,14 +47,11 @@
       },
       "type": "enumeration",
       "enum": [
-        "checkbox",
         "date",
         "email",
         "month",
         "number",
-        "tel",
-        "text",
-        "url"
+        "text"
       ]
     }
   }
