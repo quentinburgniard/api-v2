@@ -72,6 +72,12 @@
         "monthly",
         "weekly"
       ]
+    },
+    "executions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::routine-execution.routine-execution",
+      "mappedBy": "routine"
     }
   }
 }

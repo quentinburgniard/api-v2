@@ -14,8 +14,9 @@
   "attributes": {
     "routine": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::routine.routine"
+      "relation": "manyToOne",
+      "target": "api::routine.routine",
+      "inversedBy": "executions"
     },
     "stepExecutions": {
       "type": "relation",
