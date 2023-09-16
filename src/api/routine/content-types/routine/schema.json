@@ -74,10 +74,10 @@
     "reminderHour": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
-      "type": "time"
+      "type": "integer"
     }
   }
 }
