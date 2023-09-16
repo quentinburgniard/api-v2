@@ -52,14 +52,6 @@
       },
       "type": "integer"
     },
-    "reminderHour": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "integer"
-    },
     "reminderFrequency": {
       "pluginOptions": {
         "i18n": {
@@ -78,6 +70,14 @@
       "relation": "oneToMany",
       "target": "api::routine-execution.routine-execution",
       "mappedBy": "routine"
+    },
+    "reminderHour": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "time"
     }
   }
 }
