@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:20
 ENV NODE_ENV production
 WORKDIR /srv/app
 EXPOSE 1337
