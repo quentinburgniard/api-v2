@@ -10,5 +10,5 @@ module.exports = createCoreRouter('api::asset.asset', {
       ]
     }
   },
-  only: ['find']
+  only: ['create', 'find', 'update']
 });

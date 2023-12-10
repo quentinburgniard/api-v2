@@ -15,16 +15,31 @@ const s3 = new S3Client({
 });
 
 module.exports = createCoreController('api::asset.asset', ({ strapi }) =>  ({
-  async create(ctx) {
-    console.log(ctx.request.files.file);
-    const response = await s3.send(new PutObjectCommand({
-      Body: createReadStream(ctx.request.files.file.path),
-      Bucket: 'digitalleman',
-      ContentType: ctx.request.files.file.type,
-      Key: `api/${ctx.request.files.file.name}`
-    }));
-    //const response = await super.create(ctx);
-    //return response;
+  async create(context) {
+    if (context.request.files && context.request.files.file) {
+      await s3.send(new PutObjectCommand({
+        Body: createReadStream(context.request.files.file.path),
+        Bucket: 'digitalleman',
+        ContentType: context.request.files.file.type,
+        Key: `api/${context.request.files.file.name}`
+      }));
+
+      const body = {
+        data: {
+          description: context.request.body.description || null,
+          locale: context.request.body.locale || null,
+          public: context.request.body.public == 'true' ? true : false,
+          slug: context.request.files.file.name,
+          user: ctx.state.user ? ctx.state.user.id : null
+        }
+      };
+      const sanitizedInputData = await this.sanitizeInput(body.data, context);
+      const entity = await strapi.entityService.create('api::asset.asset', {
+        data: sanitizedInputData,
+      });
+      const sanitizedEntity = await this.sanitizeOutput(entity, context);
+      return this.transformResponse(sanitizedEntity);
+    }
   },
   
   async findOneBySlug(context) {
@@ -46,5 +61,33 @@ module.exports = createCoreController('api::asset.asset', ({ strapi }) =>  ({
       context.type = response.ContentType;
       context.set('cache-control', `${results.public ? 'public': 'private'}, max-age=604800`);
     }
+  },
+
+  async update(context) {
+    const body = {
+      data: {
+        description: context.request.body.description || null,
+        locale: context.request.body.locale || null,
+        public: context.request.body.public ? context.request.body.public == 'true' ? true : false : null
+      }
+    };
+    const sanitizedInputData = await this.sanitizeInput(body.data, context);
+    const entity = await strapi.entityService.update('api::asset.asset', context.params.id, {
+      data: sanitizedInputData,
+    });
+    const sanitizedEntity = await this.sanitizeOutput(entity, context);
+
+    console.log(context.state);
+
+    if (sanitizedEntity && context.request.files && context.request.files.file) {
+      await s3.send(new PutObjectCommand({
+        Body: createReadStream(context.request.files.file.path),
+        Bucket: 'digitalleman',
+        ContentType: context.request.files.file.type,
+        Key: `api/${sanitizedEntity.slug}`
+      }));
+    }
+
+    return this.transformResponse(sanitizedEntity);
   }
 }));

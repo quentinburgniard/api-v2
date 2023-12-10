@@ -4,7 +4,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "3.x",
-    "@strapi/plugin-graphql": "^4.15.0",
+    "@strapi/plugin-graphql": "4.x",
     "@strapi/plugin-i18n": "4.x",
     "@strapi/plugin-users-permissions": "4.x",
     "@strapi/provider-email-sendgrid": "4.x",
@@ -13,7 +13,7 @@
   },
   "description": "Headless CMS using Strapi 4",
   "devDependencies": {
-    "better-sqlite3": "7.x"
+    "better-sqlite3": "9.x"
   },
   "license": "MIT",
   "name": "api-v2",
