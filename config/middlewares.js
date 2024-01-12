@@ -8,5 +8,6 @@ module.exports = [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
+  'global::admin-redirect',
   'global::token'
 ];
