@@ -7,11 +7,6 @@ module.exports = [
   'strapi::body',
   'strapi::session',
   'strapi::favicon',
-  {
-    name: 'strapi::public',
-    config: {
-      defaultIndex: false
-    }
-  },
+  'strapi::public',
   'global::token'
 ];
