@@ -9,7 +9,11 @@
     "@strapi/plugin-users-permissions": "4.x",
     "@strapi/provider-email-sendgrid": "4.x",
     "@strapi/strapi": "4.x",
-    "mysql": "2.x"
+    "mysql": "2.x",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.11"
   },
   "description": "Headless CMS using Strapi 4",
   "devDependencies": {
