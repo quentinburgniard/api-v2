@@ -1,16 +1,13 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface ContentEvent extends Schema.Component {
-  collectionName: 'contentEvents';
+export interface ContentText extends Schema.Component {
+  collectionName: 'contentTexts';
   info: {
-    displayName: 'Event';
+    displayName: 'Text';
     description: '';
   };
   attributes: {
-    title: Attribute.String & Attribute.Required;
-    description: Attribute.RichText;
-    startDate: Attribute.Date & Attribute.Required;
-    endDate: Attribute.Date & Attribute.Required;
+    text: Attribute.RichText;
   };
 }
 
@@ -25,23 +22,26 @@ export interface ContentSection extends Schema.Component {
   };
 }
 
-export interface ContentText extends Schema.Component {
-  collectionName: 'contentTexts';
+export interface ContentEvent extends Schema.Component {
+  collectionName: 'contentEvents';
   info: {
-    displayName: 'Text';
+    displayName: 'Event';
     description: '';
   };
   attributes: {
-    text: Attribute.RichText;
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.RichText;
+    startDate: Attribute.Date & Attribute.Required;
+    endDate: Attribute.Date & Attribute.Required;
   };
 }
 
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'content.event': ContentEvent;
-      'content.section': ContentSection;
       'content.text': ContentText;
+      'content.section': ContentSection;
+      'content.event': ContentEvent;
     }
   }
 }

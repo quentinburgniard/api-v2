@@ -97,27 +97,52 @@
     "experiences": {
       "type": "component",
       "repeatable": true,
-      "component": "content.event"
+      "component": "content.event",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "educations": {
       "type": "component",
       "repeatable": true,
-      "component": "content.event"
+      "component": "content.event",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "miscellaneous": {
       "type": "component",
       "repeatable": true,
-      "component": "content.event"
+      "component": "content.event",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "skills": {
       "type": "component",
       "repeatable": true,
-      "component": "content.section"
+      "component": "content.section",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "interests": {
       "type": "component",
       "repeatable": true,
-      "component": "content.section"
+      "component": "content.section",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "template": {
       "pluginOptions": {
