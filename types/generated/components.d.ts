@@ -33,6 +33,7 @@ export interface ContentEvent extends Schema.Component {
     description: Attribute.RichText;
     startDate: Attribute.Date & Attribute.Required;
     endDate: Attribute.Date & Attribute.Required;
+    subtitle: Attribute.String;
   };
 }
 

@@ -20,6 +20,9 @@
     "endDate": {
       "type": "date",
       "required": true
+    },
+    "subtitle": {
+      "type": "string"
     }
   }
 }
