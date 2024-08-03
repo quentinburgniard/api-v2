@@ -154,6 +154,14 @@
       "enum": [
         "pivot-picture"
       ]
+    },
+    "workPermit": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

@@ -24,7 +24,7 @@
   "private": true,
   "scripts": {
     "build": "strapi build",
-    "develop": "strapi develop",
+    "develop": "SALT=*** SECRET=*** strapi develop",
     "start": "strapi start",
     "strapi": "strapi"
   },
