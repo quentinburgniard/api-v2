@@ -1045,6 +1045,12 @@ export interface ApiCvCv extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    subtitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::cv.cv', 'oneToOne', 'admin::user'> &
