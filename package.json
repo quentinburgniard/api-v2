@@ -3,24 +3,25 @@
     "name": "Digital Léman"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.637.0",
-    "@strapi/plugin-graphql": "^4.25.8",
-    "@strapi/plugin-i18n": "^4.25.8",
-    "@strapi/plugin-users-permissions": "^4.25.8",
-    "@strapi/provider-email-sendgrid": "^4.25.8",
-    "@strapi/strapi": "^4.25.8",
+    "@aws-sdk/client-s3": "^3.658.1",
+    "@strapi/plugin-graphql": "^4.25.12",
+    "@strapi/plugin-i18n": "^4.25.12",
+    "@strapi/plugin-users-permissions": "^4.25.12",
+    "@strapi/provider-email-sendgrid": "^4.25.12",
+    "@strapi/strapi": "^4.25.12",
     "mysql": "^2.18.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^5.2.0",
-    "styled-components": "^5.2.1"
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.11"
   },
   "description": "Headless CMS using Strapi 4",
   "devDependencies": {
-    "better-sqlite3": "^11.1.2"
+    "better-sqlite3": "^11.3.0"
   },
   "license": "MIT",
   "name": "api-v2",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "strapi build",
