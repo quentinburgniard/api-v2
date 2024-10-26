@@ -3,7 +3,6 @@
 ############################
 
 .DS_Store
-.strapi
 .AppleDouble
 .LSOverride
 Icon
@@ -83,6 +82,8 @@ ssl
 nbproject
 public/uploads/*
 !public/uploads/.gitkeep
+.tsbuildinfo
+.eslintcache
 
 ############################
 # Node.js
@@ -97,10 +98,23 @@ node_modules
 .node_history
 
 ############################
+# Package managers
+############################
+
+.yarn/*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/patches
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+yarn-error.log
+
+############################
 # Tests
 ############################
 
-testApp
 coverage
 
 ############################
@@ -110,6 +124,8 @@ coverage
 .env
 license.txt
 exports
-*.cache
+.strapi
+dist
 build
 .strapi-updater.json
+.strapi-cloud.json

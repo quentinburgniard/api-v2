@@ -1,35 +1,36 @@
 {
-  "author": {
-    "name": "Digital Léman"
-  },
-  "dependencies": {
-    "@aws-sdk/client-s3": "^3.679.0",
-    "@strapi/plugin-graphql": "^4.25.14",
-    "@strapi/plugin-i18n": "^4.25.14",
-    "@strapi/plugin-users-permissions": "^4.25.14",
-    "@strapi/provider-email-sendgrid": "^4.25.14",
-    "@strapi/strapi": "^4.25.12",
-    "mysql": "^2.18.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^5.2.0",
-    "styled-components": "^5.2.1"
-  },
-  "description": "Headless CMS using Strapi 4",
-  "devDependencies": {
-    "better-sqlite3": "^11.5.0"
-  },
-  "license": "MIT",
-  "name": "api-v2",
-  "version": "1.0.0",
+  "name": "api",
+  "version": "0.1.0",
   "private": true,
+  "description": "A Strapi application",
   "scripts": {
     "build": "strapi build",
-    "develop": "SALT=*** SECRET=*** strapi develop",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi"
   },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.1.1",
+    "@strapi/plugin-users-permissions": "5.1.1",
+    "@strapi/strapi": "5.1.1",
+    "better-sqlite3": "11.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
   "strapi": {
-    "uuid": "573cd512-c246-458c-a548-69ff0fb4f232"
+    "uuid": "863efa53-fa72-4e81-acd0-14a0749988e2"
   }
 }
